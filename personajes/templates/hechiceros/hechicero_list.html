@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Mi aplicacion de Elden Ring</title>
+    </head>
+    <body>
+        <header>
+            <h1>Elden Ring</h1>
+        </header>
+
+
+        {% for hechicero in hechicero_mostrar %}
+        <article>
+            <h2><a href="">{{ hechicero.user}}</h2>
+                <h3><a href="">{{ hechicero.magia}}</h3>
+                    <time>Fecha de creación: {{ hechicero.fechacreacion|date:"d/m/Y" }}</time>
+
+
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+    </body>
+</html>
